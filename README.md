@@ -3,6 +3,7 @@
 [English]
 
 READ AND FOLLOW DATABASE_INSTALL.MD INSTRUCTIONS BEFORE DEPLOYMENT
+REMEMBER TO PUT YOUR E-MAIL CREDENTIALS ON SEND_MAIL.PY
 
 Type python app.py on terminal to start it 
 
@@ -24,6 +25,7 @@ Basically, we will create a list of questions and answers that will be used as t
 [Portuguese]
 
 LEIA E SIGA AS INSTRUÇÕES DO DATABASE_INSTALL.MD ANTES DA IMPLEMENTAÇÃO
+LEMBRE-SE DE COLOCAR AS SUAS CREDENCIAIS DE E-MAIL NO SEND_MAIL.PY
 
 Digite python app.py no terminal para iniciá-lo
 
