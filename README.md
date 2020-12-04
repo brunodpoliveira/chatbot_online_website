@@ -6,7 +6,7 @@ READ AND FOLLOW DATABASE_INSTALL.MD INSTRUCTIONS BEFORE DEPLOYMENT
 
 REMEMBER TO PUT YOUR E-MAIL CREDENTIALS ON SEND_MAIL.PY
 
-Type python app.py on terminal to start it 
+Type python app.py on terminal to start it locally
 
 A chatbot, running on python, free and open-source.
 
@@ -27,7 +27,7 @@ LEIA E SIGA AS INSTRUÇÕES DO DATABASE_INSTALL.MD ANTES DA IMPLEMENTAÇÃO
 
 LEMBRE-SE DE COLOCAR AS SUAS CREDENCIAIS DE E-MAIL NO SEND_MAIL.PY
 
-Digite python app.py no terminal para iniciá-lo
+Digite python app.py no terminal para iniciá-lo localmente
 
 Um chatbot, rodando em python, gratuito e de código aberto.
 
