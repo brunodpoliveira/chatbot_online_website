@@ -24,7 +24,7 @@ bot = ChatBot('chatbot_test',
                                'maximum_similarity_threshold': 0.90
                                }],
               storage_adapter='chatterbot.storage.SQLStorageAdapter',
-              database_uri='postgres://ksfeyxiarhmgrl:960504837b690a8d3e1dcc8abec015eb15b6006d2d675f17f5652bd515fd4c23@ec2-52-203-165-126.compute-1.amazonaws.com:5432/d3f011jt4b0k7u',)
+              database_uri='postgres://iuznelluxbwsrr:04344ff8343fb2d24f6b53b255898a9cb97ed35024511a8c33cf62e83962e19b@ec2-52-22-238-188.compute-1.amazonaws.com:5432/d7adm1a9fde7ib',)
 # local - dev config
 # database_uri='postgresql://postgres:postgres@localhost/chatbot_database',)
 # --------------------------------------
