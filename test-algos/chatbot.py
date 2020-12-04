@@ -1,5 +1,4 @@
 from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.response_selection import get_random_response
 import spacy
