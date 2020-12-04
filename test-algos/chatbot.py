@@ -25,6 +25,7 @@ bot = ChatBot('chatbot_test',
                                }],
               storage_adapter='chatterbot.storage.SQLStorageAdapter',
               database_uri='postgresql://postgres:postgres@localhost/chatbot_database')
+# --------------------------------------
 
 # Corpus Trainer
 corpus_trainer = ChatterBotCorpusTrainer(bot)
