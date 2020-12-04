@@ -37,12 +37,12 @@ corpus_trainer = ChatterBotCorpusTrainer(bot)
 #corpus_trainer.train('data/greetings.yml')
 
 
-corpus_trainer.train('data/botprofile.yml', 'data/compliment.yml', 'data/computers.yml', 'data/context_free_br.yml',
-                     'data/conversations.yml', 'data/emotion.yml', 'data/food.yml', 'data/games.yml',
-                     'data/gossip.yml', 'data/health.yml', 'data/history.yml',
-                     'data/linguistic_knowledge.yml', 'data/literature.yml', 'data/money.yml', 'data/movies.yml',
-                     'data/politics.yml', 'data/proverbs.yml', 'data/psychology.yml', 'data/science.yml',
-                     'data/sports.yml', 'data/suggestions.yml', 'data/trivia.yml', 'data/unilab.yml')
+#corpus_trainer.train('data/botprofile.yml', 'data/compliment.yml', 'data/computers.yml', 'data/context_free_br.yml',
+#                     'data/conversations.yml', 'data/emotion.yml', 'data/food.yml', 'data/games.yml',
+#                     'data/gossip.yml', 'data/greetings.yml', 'data/health.yml', 'data/history.yml',
+#                     'data/linguistic_knowledge.yml', 'data/literature.yml', 'data/money.yml', 'data/movies.yml',
+#                     'data/politics.yml', 'data/proverbs.yml', 'data/psychology.yml', 'data/science.yml',
+#                     'data/sports.yml', 'data/suggestions.yml', 'data/trivia.yml', 'data/unilab.yml')
 
 
 # --------------------------------------
