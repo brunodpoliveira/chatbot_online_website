@@ -34,7 +34,7 @@ corpus_trainer = ChatterBotCorpusTrainer(bot)
 
 # use this line and comment out the complete pack if
 # you feel like doing some quick testing
-#corpus_trainer.train('data/greetings.yml')
+corpus_trainer.train('data/greetings.yml')
 
 
 #corpus_trainer.train('data/botprofile.yml', 'data/compliment.yml', 'data/computers.yml', 'data/context_free_br.yml',
