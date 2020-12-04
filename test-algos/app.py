@@ -9,7 +9,7 @@ import os
 # GUI + website
 app = Flask(__name__)
 # switches from deployment to development sever
-ENV = 'dev'
+ENV = 'prod'
 
 if ENV == 'dev':
     app.debug = True
@@ -19,7 +19,8 @@ if ENV == 'dev':
 
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = ''
+    app.config['SQLALCHEMY_DATABASE_URI'] = \
+        'postgres://egvqhrquerukmm:5722157bfcd68335a93ddd19278b402ce149c7f4cbe32e7f57e4360e5d85f3db@ec2-54-157-4-216.compute-1.amazonaws.com:5432/d4vosr78ieedeq'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 

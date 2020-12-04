@@ -24,7 +24,9 @@ bot = ChatBot('chatbot_test',
                                'maximum_similarity_threshold': 0.90
                                }],
               storage_adapter='chatterbot.storage.SQLStorageAdapter',
-              database_uri='postgresql://postgres:postgres@localhost/chatbot_database')
+              database_uri='postgres://ksfeyxiarhmgrl:960504837b690a8d3e1dcc8abec015eb15b6006d2d675f17f5652bd515fd4c23@ec2-52-203-165-126.compute-1.amazonaws.com:5432/d3f011jt4b0k7u',)
+# local - dev config
+# database_uri='postgresql://postgres:postgres@localhost/chatbot_database',)
 # --------------------------------------
 
 # Corpus Trainer
