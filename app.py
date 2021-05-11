@@ -1,8 +1,19 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+from typing import Callable
 from send_mail import send_mail
 from chatbot import bot
 import os
+
+
+# --------------------------------------
+# this block solves the unresolved attribute column problem
+class MySQLAlchemy(SQLAlchemy):
+    Column: Callable  # Use the typing to tell the IDE what the type is.
+    String: Callable
+    Integer: Callable
+    Text: Callable
+
 
 # --------------------------------------
 
@@ -24,12 +35,12 @@ else:
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db = SQLAlchemy(app)
+db = MySQLAlchemy(app)
 
 
 # --------------------------------------
 
-
+# TODO refactor feedback to thumbs up/down system
 class Feedback(db.Model):
     __tablename__ = 'feedback'
     id = db.Column(db.Integer, primary_key=True)

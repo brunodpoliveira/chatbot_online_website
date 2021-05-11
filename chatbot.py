@@ -24,6 +24,7 @@ bot = ChatBot('chatbot_test',
                                'maximum_similarity_threshold': 0.95
                                }],
               storage_adapter='chatterbot.storage.SQLStorageAdapter',
+              # TODO CHANGE DATABASE URI LOGIC SO AS TO NOT APPEAR ON CODE - OBSFUCATE IT SOMEHOW
               database_uri='postgresql://postgres:postgres@localhost/chatbot_database', )
 # local - dev config
 # database_uri='postgresql://postgres:postgres@localhost/chatbot_database',)
