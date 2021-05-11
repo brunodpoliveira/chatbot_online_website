@@ -9,7 +9,7 @@ import os
 # GUI + website
 app = Flask(__name__)
 # switches from deployment to development sever
-ENV = 'prod'
+ENV = 'dev'
 
 if ENV == 'dev':
     app.debug = True

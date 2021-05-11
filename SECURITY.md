@@ -11,6 +11,6 @@
 
 ## Reporting a Vulnerability
 
-Please report any vulnerability by addin a new issue. You will receive 
+Please report any vulnerability by adding a new issue. You will receive 
 a reply within 48 hours. If it is accepted, a fix to said vulnerability
 can be made by any person(s) willing and able to fix it.
