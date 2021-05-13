@@ -6,12 +6,12 @@
   </head>
   <body>
   <div id="gradient">&nbsp;
-    <h1>Protótipo do chatbot</h1>
+    <h1>Protótipo do chatbot Galathea</h1>
 
-    <h3>Implementação web do <a href="https://github.com/brunodpoliveira/chatbot_online">Chatbot Online</a> (Chabot-Chatterbot | Gui-Flask).</h3>
+    <h3>Implementação web do <a href="https://github.com/brunodpoliveira/chatbot_online">Galathea</a> (Chatbot-Chatterbot | Gui-Flask).</h3>
     <div>
       <div id="chatbox">
-        <p class="botText"><span>Oi! Eu sou o chatbot.</span></p>
+        <p class="botText"><span>Oi! Eu sou a Galathea. Escreva uma mensagem para mim.</span></p>
       </div>
       <div id="userInput">
         <input id="textInput" type="text" name="msg" placeholder="Escreva sua mensagem aqui">
@@ -42,43 +42,6 @@
         })
       </script>
     </div>
-  <div class="container">
-    <h3>Ajude-nos a melhorar o chatbot! Mande seu feedback</h3>
-    {% if message %}
-    <p class="message">{{ message | safe }}</p>
-    {% endif %}
-    <form action="/submit" method="POST">
-        <div class="form-group">
-            <h3>Nome</h3>
-            <input
-                    type="text"
-                    name="customer"
-                    placeholder="Seu nome aqui"
-            />
-        </div>
-        <div class="form-group">
-          <h3>Emoção</h3>
-          <select name="emotion">
-            <option value="">O que a frase te fez sentir?</option>
-            <option value="Amei">Amei</option>
-            <option value="Engraçado">Engraçado</option>
-            <option value="Ofensivo">Ofensivo</option>
-            <option value="Sem Sentido">Sem Sentido</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <h3>Copie e cole a pergunta e resposta abaixo</h3>
-          <textarea
-            name="comments"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Copie e cole a mensagem aqui"
-          ></textarea>
-        </div>
-        <input type="submit" value="Enviar" class="btn" />
-    </form>
 </div>
-  </div>
 </body>
 </html>

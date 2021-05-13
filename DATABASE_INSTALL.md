@@ -1,6 +1,6 @@
 # Instructions to install and run the databases correctly:
 
-- create "chatbot_database" and "feedback_chatbot" blank databases in postgresql (code tested on pgAdmin4)
+- create "gala_chatbot" and "gala_feedback" blank databases in postgresql (code tested on pgAdmin4)
 - Open terminal, type "python"
 - type these instructions:
 >>> from app import db
@@ -17,6 +17,8 @@
 - decomment the big training list (lines 48-53)
 - comment the greetings training line (line 45)
 - run chatbot.py to finish the training
+- comment both training lists 
+- run/test program typing python app.py
 
 
 

@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from typing import Callable
-from send_mail import send_mail
 from chatbot import bot
+from thumbs import *
 import os
 
 
@@ -26,7 +26,7 @@ if ENV == 'dev':
     app.debug = True
     # database config is 'postgresql://username:password@serveradress/servername
     app.config['SQLALCHEMY_DATABASE_URI'] = \
-        'postgresql://postgres:postgres@localhost/feedback_chatbot'
+        'postgresql://postgres:postgres@localhost/gala_feedback'
 
 else:
     app.debug = False
@@ -45,13 +45,15 @@ class Feedback(db.Model):
     __tablename__ = 'feedback'
     id = db.Column(db.Integer, primary_key=True)
     customer = db.Column(db.String(200), unique=True)
-    emotion = db.Column(db.String(200))
-    comments = db.Column(db.Text())
+    text_bot = db.Column(db.String(200))
+    thumbs_up = db.Column(db.String(200))
+    thumbs_down = db.Column(db.String(200))
 
-    def __init__(self, customer, emotion, comments):
+    def __init__(self, customer, text_bot, thumbs_up, thumbs_down):
         self.customer = customer
-        self.emotion = emotion
-        self.comments = comments
+        self.text_bot = text_bot
+        self.thumbs_up = thumbs_up
+        self.thumbs_down = thumbs_down
 
 
 # --------------------------------------
@@ -72,22 +74,19 @@ def get_bot_response():
 # --------------------------------------
 
 @app.route('/submit', methods=['POST'])
-def submit():
+def thumbs():
     if request.method == 'POST':
-        customer = request.form['customer']
-        emotion = request.form['emotion']
-        comments = request.form['comments']
-        if customer == '' or emotion == '':
-            return render_template('index.html', message='Por favor preencha todos os campos')
+        pass
 
         # if the customer's name is not on database, it will add its feedback to it
+        """
         if db.session.query(Feedback).filter(Feedback.customer == customer).count() == 0:
-            data = Feedback(customer, emotion, comments)
+            data = Feedback(customer, text_bot, thumbs_up, thumbs_down)
             db.session.add(data)
             db.session.commit()
-            send_mail(customer, emotion, comments)
+            send_mail(customer, text_bot, thumbs_up, thumbs_down)
             return render_template('success.html')
-        return render_template('index.html', message='Você já mandou seu feedback')
+        """
 
 
 if __name__ == "__main__":
